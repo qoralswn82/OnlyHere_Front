@@ -7,7 +7,9 @@ function Header(params) {
       <Link to="/">
         <div>요기서만</div>
       </Link>
-      <div>마이페이지</div>
+      <Link to="/myPage">
+        <div>마이페이지</div>
+      </Link>
     </div>
   );
 }

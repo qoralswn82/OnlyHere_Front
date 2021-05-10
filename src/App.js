@@ -3,7 +3,7 @@ import Layout from "./layouts/Layout";
 import { BrowserRouter, Route } from "react-router-dom";
 import dashBoard from "./routes/Dashboard";
 import Main from "./routes/Main";
-import MyPage from "./routes/myPage/MyPage"
+import MyPage from "./routes/MyPage/MyPage"
 import Login from "./routes/Login/Login";
 import Terms from "./routes/Login/Terms";
 import Join from "./routes/Login/Join";

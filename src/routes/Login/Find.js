@@ -7,7 +7,8 @@ class Find extends React.Component{
 
     //라디오 버튼 
     chngRadio = (e)=>{
-        if(e.target.value == "telNo"){
+        var {value} = e.target;
+        if(value == "telNo"){
             console.log("전화번호");
             this.setState({
                 radioState : 1

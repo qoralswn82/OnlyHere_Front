@@ -27,7 +27,7 @@ class Find extends React.Component{
         let {match} = this.props;
         return (
             <div>   
-               {match.path === '/findId' ? <div>아이디</div> : <div>비밀번호</div>}<div>를 찾을 방법을 선택해 주세요.</div> 
+               {match.path === '/login/findId' ? <div>아이디</div> : <div>비밀번호</div>}<div>를 찾을 방법을 선택해 주세요.</div> 
                <label><input type="radio" name="findW" value="telNo" onClick={(e)=>this.chngRadio(e)} checked={this.state.radioState === 1 }/>전화번호로 인증</label>
                <div>회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야, 인증번호를 받을 수 있습니다.</div>
                {this.state.radioState === 1 ? 

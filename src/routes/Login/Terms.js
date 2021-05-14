@@ -95,7 +95,7 @@ class Terms extends React.Component {
         if(!(this.validationJoin())){
             return;
         }
-        history.push("/join");
+        history.push("/login/join");
     }
     render(){
         return (

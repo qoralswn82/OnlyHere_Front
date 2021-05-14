@@ -21,11 +21,11 @@ export default function App() {
         {/* Route 작성 */}
         <Route path="/myPage" exact={true} component={MyPage} />
         <Route path="/login" exact={true} component={Login} /> 
-        <Route path="/terms" exact={true} component={Terms} /> 
-        <Route path="/join" exact={true} component={Join} /> 
-        <Route path="/joinComp" exact={true} component={JoinComp} /> 
-        <Route path="/findId" exact={true} component={Find} /> 
-        <Route path="/findPw" exact={true} component={Find} /> 
+        <Route path="/login/terms" exact={true} component={Terms} /> 
+        <Route path="/login/join" exact={true} component={Join} /> 
+        <Route path="/login/joinComp" exact={true} component={JoinComp} /> 
+        <Route path="/login/findId" exact={true} component={Find} /> 
+        <Route path="/login/findPw" exact={true} component={Find} /> 
       </Layout>
     </BrowserRouter>
     // </div>

@@ -3,6 +3,7 @@ import Layout from "./layouts/Layout";
 import { HashRouter, BrowserRouter, Route, Switch } from "react-router-dom";
 import dashBoard from "./routes/Dashboard";
 import Main from "./routes/Main";
+import IG_Main from "./routes/Ind_Group/Main";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         {/*test Route */}
         <Route path="/dashBoard" exact={true} component={dashBoard} />
         <Route path="/" exact={true} component={Main} />
+        <Route path="/ind_main/grp/grp_main" exact={true} component={IG_Main} />
         {/* Route 작성 */}
       </Layout>
     </BrowserRouter>

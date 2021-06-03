@@ -1,3 +1,4 @@
+/* 기본 header, menu, footer*/
 .container {
   display: grid;
   grid-template-columns: 1fr 7fr;
@@ -41,3 +42,11 @@
 .footer {
   background-color: crimson;
 }
+
+/* /login 
+  - 로그인
+  - 회원가입
+  - 비밀번호 찾기
+  - 아이디 찾기 
+  etc...
+*/

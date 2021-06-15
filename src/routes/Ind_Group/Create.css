@@ -1,0 +1,13 @@
+.gp_image{
+  width: 40%;
+}
+.gp_information{
+  width: 60%;
+  margin: 0px auto;
+}
+.gp_information input{
+  display: block;
+  width: 40rem;
+  height: 2.3rem;
+  margin-bottom: 10px;
+}

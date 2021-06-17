@@ -12,7 +12,7 @@ section{
   background-color: #FAE0D4;
   flex-wrap: wrap;
 }
-.buttons{
+.btn_gpCreate{
   width: 100%;
   margin-bottom: 15px;
 }

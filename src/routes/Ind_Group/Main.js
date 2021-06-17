@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import { Link } from "react-router-dom";
 
 class Main extends React.Component{
 
@@ -8,8 +9,8 @@ class Main extends React.Component{
       return (
         <section>
         <div className="container1">
-          <div className="buttons">
-            <div className="make"><button> 그룹 만들기</button></div>
+          <div className="btn_gpCreate">
+            <Link to='/ind_main/grp/grp_create'><button> 그룹 만들기</button></Link>
           </div>
           <div className="find">
           <form name="" action="">

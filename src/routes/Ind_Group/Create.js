@@ -1,5 +1,6 @@
 import React from "react";
 import "./Create.css";
+import { Link } from "react-router-dom";
 
 class Create extends React.Component{
 
@@ -40,7 +41,7 @@ class Create extends React.Component{
             </div>
           </div>
           <div className="selected">
-            <div className="title">초대된 목록</div>
+            <div className="title">추가된 멤버</div>
             <div className="box">
             <div className="search">
               <input type="text" name="gp_name" id="gp_name"/>
@@ -102,7 +103,9 @@ class Create extends React.Component{
         </div>
 
         <div className="container4">
-          <button type="button" className="btn_cancel">취소</button>
+          <Link to='/ind_main/grp/grp_main'>
+            <button type="button" className="btn_cancel">취소</button>
+          </Link>
           <button type="submit" className="btn_confirm">완료</button>
         </div>
         </form>

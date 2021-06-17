@@ -13,11 +13,14 @@
   margin-bottom: 10px;
 }
 #gp_introduce{
+  resize: none;
   height: 5rem;
+  width: 100%;
 }
 
 .container2{
   background-color: #FAE0D4;
+  margin-bottom: 40px;
 }
 .unselected, .selected{
   width: 46%;
@@ -26,4 +29,101 @@
 .box{
   height: 20rem;
   border: 1px solid;
+  padding: 5px;
+}
+.search{
+  margin-bottom: 10px;
+}
+.search input{
+  width: 80%;
+  height: 2.3rem;
+  padding-left: 10px;
+}
+.search button{
+  width: 17%;
+  height: 2.3rem;
+  margin-left: 2%;
+}
+.members{
+  overflow-y: scroll;
+  height: 16rem;
+}
+.member{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 3px;
+}
+.member .m_image{
+  width: 10%;
+}
+.member .m_name{
+  width: 80%;
+  padding-left: 10px;
+  height: 2.3rem;
+  line-height: 2.3rem;
+}
+.member input{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-top: 4px;
+}
+
+
+.container3{
+  width: 100%;
+  background-color: #FAE0D4;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.gp_type .typeList{
+  display: flex;
+  padding: 28px 25px 24px 44px;
+}
+.gp_type .typeList .typeListItem{
+  width: 33.33%;
+  float: none;
+  padding: 0;
+}
+.gp_type .uCheck{
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.uCheck{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.gp_type .uCheck .checkInput{
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.gp_type .typeList li .checkLabel{
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.gp_type .typeList li .checkLabel .shape{
+  top: 0;
+  margin-top: 0;
+}
+.gp_type .typeList li .msg{
+  display: block;
+  margin-top: 5px;
+}
+
+.container4{
+  width: 25%;
+  margin: 0 auto;
+}
+.btn_confirm{
+  float: right;
 }

@@ -1,7 +1,8 @@
 section{
-  margin: 50px 180px;
+  margin: 50px auto;
   padding: 20px;
   background-color: #FFEAEA;
+  width: 70rem;
 }
 
 .container1{
@@ -28,7 +29,7 @@ button{
   padding-left: 1rem;
   margin-right: 0.5rem;
 }
-input{
+.find input{
   width: 3rem;
   height: 2.3rem;
 }

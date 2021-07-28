@@ -93,7 +93,7 @@ class Create extends React.Component{
                   <span className="shape"></span>
                   <span className="text">
                     <strong>공개 그룹</strong>
-                    <span className="msg">누구나 그룹을 검색해 찾을 수 있고, 그 그룹 소개와 게시글을 볼 수 있습니다.</span>
+                    <span className="msg">누구나 그룹을 검색해 찾을 수 있고, 그룹 소개와 게시글을 볼 수 있습니다.</span>
                   </span>
                 </span>
               </label>

@@ -22,3 +22,4 @@ export default function App() {
     // </div>
   );
 }
+// /ind_main/grp/star_modify

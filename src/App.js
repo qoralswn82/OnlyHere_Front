@@ -1,10 +1,12 @@
 import "./styles.css";
 import Layout from "./layouts/Layout";
 import { HashRouter, BrowserRouter, Route, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import dashBoard from "./routes/Dashboard";
 import Main from "./routes/Main";
 import IG_Main from "./routes/Ind_Group/Main";
 import IG_Create from "./routes/Ind_Group/Create";
+
 
 export default function App() {
   return (

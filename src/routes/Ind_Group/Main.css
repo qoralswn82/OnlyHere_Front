@@ -1,62 +1,61 @@
-section{
+section {
   margin: 50px auto;
   padding: 20px;
-  background-color: #FFEAEA;
+  background-color: #ffeaea;
   width: 70rem;
 }
 
-.container1{
+.container1 {
   display: flex;
   width: 100%;
   margin-bottom: 60px;
-  background-color: #FAE0D4;
+  background-color: #fae0d4;
   flex-wrap: wrap;
 }
-.btn_gpCreate{
+.btn_gpCreate {
   width: 100%;
   margin-bottom: 15px;
 }
-button{
+button {
   width: 7.5rem;
   height: 2.5rem;
 }
-.join{
+.join {
   width: 100%;
 }
-#find_gp{
+#find_gp {
   width: 50rem;
   height: 2.3rem;
   padding-left: 1rem;
   margin-right: 0.5rem;
 }
-.find input{
+.find input {
   width: 3rem;
   height: 2.3rem;
 }
 
-
-.container2{
+.container2 {
   display: flex;
   flex-wrap: wrap;
 }
-.selection{
+.selection {
   width: 100%;
   margin-bottom: 15px;
 }
-.mygroup{
+.mygroup {
   width: 100%;
 }
-ul {
+.container2 .mygroup ul {
   list-style-type: disc;
-  list-style:none;
-  padding-left:0px;
+  list-style: none;
+  padding-left: 0px;
 }
-li {
+.container2 .mygroup li {
   text-align: -webkit-match-parent;
   float: left;
   margin: 9.5px;
 }
-.gCover{
+.gCover {
   height: 210px;
   background: #fff;
   position: relative;
@@ -67,12 +66,12 @@ li {
   font-size: 13px;
   font-weight: 400;
 }
-.gCover .grpCreate .cover{
+.gCover .grpCreate .cover {
   padding-top: 55px;
   text-align: center;
 }
 .gCover .grpCreate .grpName {
-    height: 85px;
-    padding-top: 10px;
-    text-align: center;
+  height: 85px;
+  padding-top: 10px;
+  text-align: center;
 }

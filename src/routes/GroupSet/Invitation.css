@@ -1,0 +1,17 @@
+.i_person {
+  width: 100%;
+  background-color: #fae0d4;
+}
+.i_person ul li {
+  display: flex;
+  margin-bottom: 15px;
+}
+.i_person ul li .ip_image {
+  width: 35%;
+}
+.i_person ul li .ip_name {
+  width: 35%;
+}
+.i_person ul li .ip_accept {
+  width: 30%;
+}

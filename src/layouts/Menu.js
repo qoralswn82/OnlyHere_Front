@@ -9,7 +9,7 @@ function Menu({ type }) {
       <Link to="/dashBoard">
         <p>대시보드</p>
       </Link>
-      <Link>
+      <Link to="/ind_main/grp/grp_main">
         <p>그룹</p>
       </Link>
       <Link>

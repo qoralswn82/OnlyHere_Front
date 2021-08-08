@@ -1,34 +1,46 @@
-import React, {Fragment} from "react";
+import React, { Fragment ,useState} from "react";
 import Header from "./Header";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import {Grid,Paper} from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 
-class Layout extends React.Component {
-  state = {
-    type: "ind", //
-    path : (window.location.pathname).slice(0,6) 
-  }
-  componentDidMount(){
-    console.log(window.location.pathname);
-    console.log(this.props.children);
-    console.log(this.props);
-   
-  }
-  render() {
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
+
+const Layout = (props)=>{
+    const classes = useStyles();
+    const [path,setPath] = useState((window.location.pathname).slice(0, 6));
+    const [type,setType] = useState('grp');
     return (
-      <Fragment>
-        {this.state.path === '/login' ?  
-        <div>{this.props.children}</div>: 
-        <div class="container">
-          <Header />
-          <Menu type={this.state.type} />
-          <div>{this.props.children}</div>
-          <Footer />
-          </div>
+      <div class={useStyles.root}>
+        {path === '/login' ?
+          props.children :
+            <Grid container spacing={3}>
+              <Grid item xs={12}>
+              <Header type={type}/>
+              </Grid>
+             
+                <Grid item xs={2}><Menu type={type} /></Grid>
+                <Grid item xs={10}>{props.children}</Grid>
+             
+              <Grid>
+              <Footer />
+              </Grid>
+            </Grid>
         }
-      </Fragment>
+      </div>
     );
   }
-}
 
-export default Layout;
+
+export default Layout ;

@@ -9,6 +9,7 @@ import Terms from "./routes/Login/Terms";
 import Join from "./routes/Login/Join";
 import JoinComp from "./routes/Login/JoinComp";
 import Find from "./routes/Login/Find";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
@@ -21,9 +22,9 @@ export default function App() {
         <Route path="/" exact={true} component={Main} />
         {/* Route 작성 */}
         <Route path="/myPage" exact={true} component={MyPage} />
-        <Route path="/login" exact={true} component={Login} /> 
-        <Route path="/login/terms" exact={true} component={Terms} /> 
-        <Route path="/login/join" exact={true} component={Join} /> 
+        <Route path="/login" exact={true} component={Login} /> {/*부트스트랩 적용완료*/}
+        <Route path="/login/terms" exact={true} component={Terms} /> {/*부트스트랩 적용완료*/}
+        <Route path="/login/join" exact={true} component={Join} /> {/*부트스트랩 적용완료*/}
         <Route path="/login/joinComp" exact={true} component={JoinComp} /> 
         {/* 같은 파일 link path에 따른 분기 */}
         <Route path="/login/findId" exact={true} component={Find} /> 

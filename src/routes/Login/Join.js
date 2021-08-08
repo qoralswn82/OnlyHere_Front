@@ -1,8 +1,24 @@
+import { Checkbox, FormControlLabel, FormGroup, Grid, makeStyles } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 // import counter from 'easytimer';
 // import useTimer from 'easytimer-react-hook';
-
+const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+    },
+    margin: {
+      margin: theme.spacing(1),
+    },
+    withoutLabel: {
+      marginTop: theme.spacing(3),
+    },
+    textField: {
+      width: '25ch',
+    },
+  }));
 
 class Join extends React.Component {
     state={
@@ -27,7 +43,9 @@ class Join extends React.Component {
             telNoMsg : null,
             certificationMsg : null
         
+        
     }
+    
 
     //아이디 중복 체크
     dupId = _=>{
@@ -188,50 +206,67 @@ class Join extends React.Component {
 
     }
     render(){
-        return(<div>
-            <div>
-                <h3>요기서만 로고</h3>
-                <ol class="breadcrumb">
-                    <li >약관동의</li>
-                    <li><i class="xi-angle-right"></i></li>
-                    <li class="active">회원정보 입력</li>
-                </ol>
-            </div>
-            <div>
-                {/** clone : naver 회원가입 시 validation 체크 시 모두 onBlur 사용 */} 
-                <label>아이디</label>
-                <input type="text" name="id" onBlur={(e)=>this.idChck(e)}/>
-                <button onClick={this.dupId}>중복확인</button>
-                <label>{this.state.dupIdMsg}</label>
-                <label>비밀번호</label>
-                <input type="password"/>
-                <label>{this.state.pwMsg}</label>
-                <label>비밀번호 확인</label>
-                <input type="password"/>
-                <label>{this.state.pwChckMsg}</label>
-                <label>이름</label>
-                <input type="text"/>
-                <label>닉네임?</label>
-                <input type="text"/>
-                <label>이메일</label>
-                <input type="email"/>
-                <label>{this.state.emailMsg}</label>
-                <label>전화번호</label>
-                <input type="text"/>
-                <label>{this.state.telNoMsg}</label>
-                <button onClick={this.preCertification}>인증번호 받기</button>
-                { this.state.preCertification &&
-                <div>   
-                    {/** clone : naver 회원가입 시 인증번호 */}             
-                    <input type="text" onBlur={(e)=>this.getCertification(e)} placeholder="인증번호를 입력하세요."/>
-                    <label>{this.state.count}</label>
-                    <label>{this.state.certificationMsg}</label>
-                </div>
-                }
-                {/** 취소 없이 상단 로고를 눌러 자동 취소 */}
-                <button onClick={this.join}>가입하기</button>
-            </div>
-        </div>)
+        
+        return(        
+//         <Container>
+//                 <Row>
+//                     <Col></Col>
+//                     <Col>
+//                     <Container>
+//                         <Row>
+//                         <Image src="/img/yogiseoman.png" rounded />
+//                         </Row>
+//                         <Row>
+//                         <ol class="breadcrumb">
+//                     <li >약관동의</li>
+//                     <li><i class="xi-angle-right"></i></li>
+//                     <li class="active">회원정보 입력</li>
+//                 </ol>
+//                         </Row>
+//                         <Row>
+//  {/** clone : naver 회원가입 시 validation 체크 시 모두 onBlur 사용 */} 
+//  <label>아이디</label>
+//                 <input type="text" name="id" onBlur={(e)=>this.idChck(e)}/>
+//                 <Button onClick={this.dupId}>중복확인</Button>
+//                 <label>{this.state.dupIdMsg}</label>
+//                 <label>비밀번호</label>
+//                 <input type="password"/>
+//                 <label>{this.state.pwMsg}</label>
+//                 <label>비밀번호 확인</label>
+//                 <input type="password"/>
+//                 <label>{this.state.pwChckMsg}</label>
+//                 <label>이름</label>
+//                 <input type="text"/>
+//                 <label>닉네임?</label>
+//                 <input type="text"/>
+//                 <label>이메일</label>
+//                 <input type="email"/>
+//                 <label>{this.state.emailMsg}</label>
+//                 <label>전화번호</label>
+//                 <input type="text"/>
+//                 <label>{this.state.telNoMsg}</label>
+//                 <Button onClick={this.preCertification}>인증번호 받기</Button>
+//                 { this.state.preCertification &&
+//                 <div>   
+//                     {/** clone : naver 회원가입 시 인증번호 */}             
+//                     <input type="text" onBlur={(e)=>this.getCertification(e)} placeholder="인증번호를 입력하세요."/>
+//                     <label>{this.state.count}</label>
+//                     <label>{this.state.certificationMsg}</label>
+//                 </div>
+//                 }
+//                 {/** 취소 없이 상단 로고를 눌러 자동 취소 */}
+//                 <Button onClick={this.join}>가입하기</Button>
+//                         </Row>
+//                     </Container>
+//                     </Col>
+//                     <Col></Col>
+//                 </Row>
+//             </Container>
+        <div>
+
+        </div>
+        
+        )
     };
 }
 

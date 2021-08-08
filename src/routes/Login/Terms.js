@@ -1,5 +1,7 @@
-import React from 'react';
+import { Checkbox, FormControlLabel, FormGroup, Grid } from '@material-ui/core';
+import React,{setState} from 'react';
 import { Link } from 'react-router-dom';
+
 
 class Terms extends React.Component {
     state={
@@ -97,26 +99,60 @@ class Terms extends React.Component {
         }
         history.push("/login/join");
     }
+
+    
     render(){
         return (
-            <div>
-                <h3>요기서만 로고</h3>
+           
 
-                <ol class="breadcrumb">
-                    <li class="active">약관동의</li>
-                    <li><i class="xi-angle-right"></i></li>
-                    <li>회원정보 입력</li>
-                </ol>
-                <label><input type="checkbox" name="all" value="all" onClick={(e)=>this.chckTerms(e)} checked={this.state.all}/>요기서만 이용약관, 개인정보 수집 및 이용에 모두 동의합니다.<p></p></label>
-                <label><input type="checkbox" name="userTerms" value="userTerms" onClick={(e)=>this.chckTerms(e)} checked={this.state.userTerms}/>이용약관 동의 (필수)</label>
-                <div>내용</div>
-                <label><input type="checkbox" name="indInfoTerms" value="indInfoTerms" onClick={(e)=>this.chckTerms(e)} checked={this.state.indInfoTerms}/>개인정보 수집 및 이용 동의 (필수)</label>
-                <div>내용</div>
-                <Link to ="/login"><button>취소</button></Link>
-                <button onClick={this.confirmTerms} >확인</button><p></p>
-                <a>이용약관 | </a>
-                <a>개인정보 처리방침 | </a>
-                <a>회원정보 고객센터</a>
+            // <Container>
+            //     <Row>
+            //         <Col></Col>
+            //         <Col>
+            //         <Container>
+            //             <Row>
+            //             <Image src="/img/yogiseoman.png" rounded />
+            //             </Row>
+            //             <Row>
+            //             <ol class="breadcrumb">
+            //         <li class="active">약관동의</li>
+            //         <li><i class="xi-angle-right"></i></li>
+            //         <li>회원정보 입력</li>
+            //     </ol>
+            //             </Row>
+            //             <Row>
+
+            //             <label><input type="checkbox" name="all" value="all" onClick={(e)=>this.chckTerms(e)} checked={this.state.all}/>요기서만 이용약관, 개인정보 수집 및 이용에 모두 동의합니다.<p></p></label>
+            //     <label><input type="checkbox" name="userTerms" value="userTerms" onClick={(e)=>this.chckTerms(e)} checked={this.state.userTerms}/>이용약관 동의 (필수)</label>
+            //     <div>내용</div>
+            //     <label><input type="checkbox" name="indInfoTerms" value="indInfoTerms" onClick={(e)=>this.chckTerms(e)} checked={this.state.indInfoTerms}/>개인정보 수집 및 이용 동의 (필수)</label>
+            //     <div>내용</div>
+            //     <Link to ="/login"><Button>취소</Button></Link>
+            //     <Button onClick={this.confirmTerms} >확인</Button><p></p>
+            //     <a>이용약관 | </a>
+            //     <a>개인정보 처리방침 | </a>
+            //     <a>회원정보 고객센터</a>
+            //             </Row>
+            //         </Container>
+            //         </Col>
+            //         <Col></Col>
+            //     </Row>
+            // </Container>
+            <div>
+
+<Grid
+ item xs={12}>
+                <Grid container justifyContent="center" spacing={2}>
+
+                <FormGroup row>
+      <FormControlLabel
+        // control={<Checkbox checked={state.checkedA} onChange={handleChange} name="checkedA" />}
+        label="Secondary"
+      />
+      </FormGroup>
+
+                </Grid>
+</Grid>
             </div>
         )
     };

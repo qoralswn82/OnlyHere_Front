@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import { BrowserRouter, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    {/* path : '/login*'일 경우와 일반적인 화면 layout 파일 안에서 분기*/}
+      <Layout>
+        {/*test Route */}
+        <div style={{
+          backgroundColor : "red"
+        }}>테스트 입니다.</div>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

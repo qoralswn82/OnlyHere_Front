@@ -10,7 +10,8 @@ function App() {
       <Layout>
         {/*test Route */}
         <div style={{
-          backgroundColor : "red"
+          backgroundColor : "red",
+          height: "100%"
         }}>테스트 입니다.</div>
       </Layout>
     </BrowserRouter>

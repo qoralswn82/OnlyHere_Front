@@ -22,7 +22,7 @@ const Layout = (props)=>{
     const [type,setType] = useState('grp');
 
     return (
-        <div class={useStyles.root}>
+        <div class={classes.root}>
           {path === '/login' ?
             props.children :
               <Grid container spacing={3}>
